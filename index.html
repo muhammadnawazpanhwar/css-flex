@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex box</title>
+    <style>
+        .container{
+            width:100%;
+            height: 600px;
+            border: 2px solid black;
+            /*for intalizing the container  to the flex box*/
+            display:flex;
+            /*properties for the flex  box 
+            flex-direction: column;
+            flex-direction: row;(by default)
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            
+            */
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            /*
+            flex-wrap: wrap;
+            
+            flex-wrap: wrap-reverse;
+            */
+            /*
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            
+            */
+            /*
+            justify-content: center;
+            align-items: center;
+            align-items:flex-end;
+            align-items: flex-start;
+            align-items: stretch;*/
+        }
+        .item{
+            background-color: royalblue;
+            width:100px;
+            height:200px;
+            border: 2px solid red;
+            margin: 5px;
+            padding: 3px;
+        }
+        #item-1{
+            /*
+            order: 2;
+            flex-grow: 3;
+            flex-shrink: 3;*/
+            /*flex-basis: 120PX;
+            /*WHEN FLEX DIRECTION IS IN ROW IT CHANGES THE WIDTH OF BOX*/
+            /*WHEN FLEX DIRECTION IS IN COLUMN IT CHANGES THE HEIGTH OF BOX*/
+            align-self: center;
+            align-self: flex-end;
+            align-self: baseline;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is  Css flex box </h1>
+    <div class="container">
+        <!--div.item#item-$*6-->
+        <div class="item" id="item-1">Home</div>
+        <div class="item" id="item-2">About us </div>
+        <div class="item" id="item-3">Services</div>
+        <div class="item" id="item-5">Contact us </div>
+        <div class="item" id="item-6">Blogs</div>
+
+    </div>
+    
+</body>
+</html>
